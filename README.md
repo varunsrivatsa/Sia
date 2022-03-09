@@ -1,17 +1,14 @@
-
 <h1 align="center">
   Sia
 </h1>
 
-*<p align="center">Your open-source privacy preserving personal assistant.</p>*
+_<p align="center">Your open-source privacy preserving personal assistant.</p>_
 
 ---
 
-
-
 https://user-images.githubusercontent.com/88975968/157391135-324f369f-51dc-4d4d-b3ed-a99ab90c3dde.mp4
 
-
+Link : [Demo Video](https://drive.google.com/file/d/1F2UxkAHYUbh--oqtS100vYYFTnUx4QKl/view?usp=sharing)
 
 ## 👋 Introduction
 
@@ -23,13 +20,27 @@ You can **talk to her** and she can **talk to you**.
 You can also **text her** and she can also **text you**.
 If you want to, Sia can communicate with you by being **offline to protect your privacy**.
 
+### Azure technologies used
+
+> 1. Azure text-to-speech : With the help of text-to-speech feature of the Speech service, which is part of Azure Cognitive Services. Sia is able to interact with us by converting text into humanlike synthesized speech.
+
+With the help of nodejs npm package : `npm i microsoft-cognitiveservices-speech-sdk`.
+
+We can synthesize speech using text or string to a .wav file in the location that we specified.
+
+The text-to-speech feature in the Azure Speech service supports more than 270 voices and more than 110 languages and variants.
+
+Currently, Sia is using `en-US-AmberNeural` voice
+
+> 2. Azure speech-to-text **(Not yet integrated, still under development)**
+
 ### Why?
 
 > 1. If you are a developer (or not), you may want to build many things that could help in your daily life.
-> Instead of building a dedicated project for each of those ideas, Sia can help you with his
-> packages/modules (skills) structure.
+>    Instead of building a dedicated project for each of those ideas, Sia can help you with his
+>    packages/modules (skills) structure.
 > 2. With this generic structure, everyone can create their own modules and share them with others.
-> Therefore there is only one core (to rule them all).
+>    Therefore there is only one core (to rule them all).
 > 3. Sia uses AI concepts, which is cool.
 > 4. Privacy matters, you can configure Sia to talk with her offline. You can already text with her without any third party services.
 > 5. Open source is great.
@@ -37,6 +48,7 @@ If you want to, Sia can communicate with you by being **offline to protect your 
 ### What is this repository for?
 
 > This repository contains the following nodes of Sia:
+>
 > - The server
 > - The packages/modules
 > - The web app
@@ -58,12 +70,11 @@ Sounds cool right?
 - [Pipenv](https://docs.pipenv.org) >= 2020.11.15
 - Supported OSes: Linux, macOS and Windows
 
-
 ### Installation
 
 ```sh
 # Clone the repository (stable branch)
-git clone -b master https://github.com/NXture/Sia.git sia
+git clone -b master https://github.com/varunsrivatsa/Sia.git sia
 
 
 # Go to the project root
@@ -98,7 +109,7 @@ Gitpod will automatically setup an environment and run an instance for you.
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/NXture/Sia)
 
 ## 📝 License
+
 [MIT License](https://github.com/NXture/Sia/blob/main/LICENSE.md)
 
 Copyright (c) 2021-present, Varun Srivatsa <varunsrivatsa27@gmail.com>
-
